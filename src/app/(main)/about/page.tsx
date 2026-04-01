@@ -19,7 +19,7 @@ function ImageAvatar() {
   return (
     <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-white shadow-lg">
       <Image
-        src="/profile.png"
+        src="./profile.png"
         alt="Dhrumi Shah"
         width={256}
         height={256}
