@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'media',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -31,6 +32,13 @@ module.exports = {
           700: '#334155',
           800: '#1e293b',
           900: '#0f172a',
+        },
+        light: {
+          background: '#ffffff',
+          surface: '#f9fafb',
+          border: '#e5e7eb',
+          text: '#111827',
+          muted: '#6b7280',
         }
       },
       animation: {

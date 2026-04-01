@@ -17,7 +17,7 @@ const sections = [
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen bg-gray-50">
+    <div className="flex min-h-screen bg-gray-50 dark:bg-dark-900">
       <Sidebar sections={sections} activeSection="home" />
       <main className="flex-1 ml-0 lg:ml-64 transition-all duration-300">
         <div className="max-w-6xl mx-auto">

@@ -52,7 +52,7 @@ export default function ExperiencePage() {
   ]
 
   return (
-    <div className="min-h-screen section-padding">
+    <div className="min-h-screen section-padding bg-gray-50 dark:bg-dark-900">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -62,7 +62,7 @@ export default function ExperiencePage() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold mb-4">Work Experience</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             My professional journey in backend development, showcasing growth from software engineering intern
             to backend developer at John Deere, working with modern cloud technologies and scalable systems.
           </p>
@@ -82,7 +82,7 @@ export default function ExperiencePage() {
                 <div className="flex-1">
                   <div className="flex items-center space-x-3 mb-2">
                     <Icon icon="mdi:office-building" className="text-primary-600" width={20} height={20} />
-                    <h3 className="text-2xl font-bold text-dark-900">
+                    <h3 className="text-2xl font-bold text-dark-900 dark:text-gray-300">
                       {experience.company}
                     </h3>
                   </div>
@@ -91,7 +91,7 @@ export default function ExperiencePage() {
                     {experience.position}
                   </h4>
                   
-                  <div className="flex flex-wrap items-center space-x-4 text-gray-600 mb-4">
+                  <div className="flex flex-wrap items-center space-x-4 text-gray-600 dark:text-gray-300 mb-4">
                     <div className="flex items-center space-x-2">
                       <Icon icon="mdi:calendar" width={16} height={16} />
                       <span>{experience.duration}</span>
@@ -102,17 +102,17 @@ export default function ExperiencePage() {
                     </div>
                   </div>
                   
-                  <p className="text-gray-600 mb-4 leading-relaxed">
+                  <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
                     {experience.description}
                   </p>
                 </div>
               </div>
               
               <div className="mb-6">
-                <h5 className="font-semibold mb-3 text-dark-900">Key Achievements:</h5>
+                <h5 className="font-semibold mb-3 text-dark-900 dark:text-blue-400">Key Achievements:</h5>
                 <ul className="space-y-2">
                   {experience.achievements.map((achievement, idx) => (
-                    <li key={idx} className="flex items-start space-x-2 text-gray-600">
+                    <li key={idx} className="flex items-start space-x-2 text-gray-600 dark:text-gray-300">
                       <div className="w-2 h-2 bg-primary-500 rounded-full mt-2 flex-shrink-0"></div>
                       <span>{achievement}</span>
                     </li>
@@ -121,7 +121,7 @@ export default function ExperiencePage() {
               </div>
               
               <div className="mb-6">
-                <h5 className="font-semibold mb-3 text-dark-900">Technologies Used:</h5>
+                <h5 className="font-semibold mb-3 text-dark-900 dark:text-blue-400">Technologies Used:</h5>
                 <div className="flex flex-wrap gap-2">
                   {experience.technologies.map((tech) => (
                     <span

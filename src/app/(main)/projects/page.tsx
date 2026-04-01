@@ -63,7 +63,7 @@ export default function ProjectsPage() {
   ]
 
   return (
-    <div className="min-h-screen section-padding">
+    <div className="min-h-screen section-padding bg-gray-50 dark:bg-dark-900">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -73,7 +73,7 @@ export default function ProjectsPage() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold mb-4">Featured Projects</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto dark:text-gray-300">
             A showcase of my full-stack development projects, featuring modern web applications, 
             e-commerce platforms, and collaborative tools built with JavaScript and React.
           </p>
@@ -94,27 +94,13 @@ export default function ProjectsPage() {
                   <span className="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium">
                     {project.category}
                   </span>
-                  {/* <div className="flex items-center space-x-4 text-sm text-gray-500">
-                    <div className="flex items-center space-x-1">
-                      <Icon icon="mdi:star" width={16} height={16} />
-                      <span>{project.stats.stars}</span>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                      <Icon icon="mdi:source-branch" width={16} height={16} />
-                      <span>{project.stats.forks}</span>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                      <Icon icon="mdi:eye" width={16} height={16} />
-                      <span>{project.stats.views}</span>
-                    </div>
-                  </div> */}
                 </div>
                 
-                <h3 className="text-2xl font-bold mb-3 text-dark-900 group-hover:text-primary-600 transition-colors duration-200">
+                <h3 className="text-2xl font-bold mb-3 text-dark-900 dark:text-blue-400 group-hover:text-primary-600 transition-colors duration-200">
                   {project.title}
                 </h3>
                 
-                <p className="text-gray-600 mb-4 leading-relaxed">
+                <p className="text-gray-600 mb-4 leading-relaxed dark:text-gray-300">
                   {project.description}
                 </p>
                 
@@ -130,10 +116,10 @@ export default function ProjectsPage() {
                 </div>
                 
                 <div className="mb-6">
-                  <h4 className="font-semibold mb-3 text-dark-900">Key Features:</h4>
+                  <h4 className="font-semibold mb-3 text-dark-900 dark:text-blue-400">Key Features:</h4>
                   <ul className="space-y-2">
                     {project.features.map((feature) => (
-                      <li key={feature} className="flex items-center space-x-2 text-gray-600">
+                      <li key={feature} className="flex items-center space-x-2 text-gray-600 dark:text-gray-300">
                         <div className="w-2 h-2 bg-primary-500 rounded-full"></div>
                         <span>{feature}</span>
                       </li>

@@ -20,7 +20,7 @@ export default function SkillsPage() {
       skills: [
         { name: 'Node.js', level: 90, color: 'from-green-500 to-emerald-500' },
         { name: 'Spring Boot', level: 85, color: 'from-green-500 to-emerald-500' },
-        { name: 'Express.js', level: 85, color: 'from-gray-600 to-gray-700' },
+        { name: 'Express.js', level: 85, color: 'from-gray-400 to-gray-500' },
       ]
     },
     {
@@ -53,7 +53,7 @@ export default function SkillsPage() {
       icon: () => <Icon icon="mdi:monitor" className="text-primary-600" width={24} height={24} />, 
       skills: [
         { name: 'React.js', level: 85, color: 'from-blue-500 to-cyan-500' },
-        { name: 'Next.js', level: 80, color: 'from-gray-800 to-gray-900' },
+        { name: 'Next.js', level: 80, color: 'from-gray-500 to-gray-600' },
         { name: 'JavaScript/TypeScript', level: 90, color: 'from-yellow-400 to-orange-500' },
       ]
     },
@@ -71,7 +71,7 @@ export default function SkillsPage() {
   ]
 
   return (
-    <div className="min-h-screen section-padding">
+    <div className="min-h-screen section-padding bg-gray-50 dark:bg-dark-900">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -81,7 +81,7 @@ export default function SkillsPage() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold mb-4">Skills & Expertise</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             A comprehensive overview of my technical skills and proficiency levels
           </p>
         </motion.div>
@@ -107,10 +107,10 @@ export default function SkillsPage() {
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skill.name}>
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-sm font-medium text-gray-700">
+                      <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
                         {skill.name}
                       </span>
-                      <span className="text-sm text-gray-500">
+                      <span className="text-sm text-gray-500 dark:text-gray-400">
                         {skill.level}%
                       </span>
                     </div>

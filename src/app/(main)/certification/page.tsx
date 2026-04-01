@@ -45,7 +45,7 @@ export default function CertificationPage() {
   ]
 
   return (
-    <div className="min-h-screen section-padding">
+    <div className="min-h-screen section-padding bg-gray-50 dark:bg-dark-900">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -55,7 +55,7 @@ export default function CertificationPage() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold mb-4">Achievements & Certifications</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Building a strong foundation in cloud technologies and full-stack development through 
             certifications and continuous learning in Spring Boot, Node.js, and modern software development practices.
           </p>
@@ -75,7 +75,7 @@ export default function CertificationPage() {
                 <stat.icon />
               </div>
               <div className="text-2xl font-bold text-primary-600 mb-2">{stat.value}</div>
-              <div className="text-gray-600 text-sm">{stat.label}</div>
+              <div className="text-gray-600 dark:text-gray-300 text-sm">{stat.label}</div>
             </div>
           ))}
         </motion.div>
@@ -88,7 +88,7 @@ export default function CertificationPage() {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <h3 className="text-2xl font-bold mb-8 text-center text-dark-900">
+          <h3 className="text-2xl font-bold mb-8 text-center text-dark-900 dark:text-gray-300">
             Professional Certifications
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -107,14 +107,14 @@ export default function CertificationPage() {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between mb-2">
-                      <h4 className="text-xl font-bold text-dark-900">
+                      <h4 className="text-xl font-bold text-dark-900 dark:text-gray-300">
                         {achievement.title}
                       </h4>
                       <span className="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium">
                         {achievement.badge}
                       </span>
                     </div>
-                    <p className="text-gray-600 mb-2">
+                    <p className="text-gray-600 dark:text-gray-300 mb-2">
                       {achievement.description}
                     </p>
                     <div className="flex items-center mb-4">
@@ -154,8 +154,8 @@ export default function CertificationPage() {
           <div className="space-y-4">
             <div>
               <div className="flex justify-between items-center mb-2">
-                <span className="text-gray-700">AWS Certified Developer - Associate</span>
-                <span className="text-sm text-gray-500">In Progress</span>
+                <span className="text-gray-700 dark:text-gray-300">AWS Certified Developer - Associate</span>
+                <span className="text-sm text-gray-500 dark:text-gray-400">In Progress</span>
               </div>
               <div className="w-full bg-gray-200 rounded-full h-2">
                 <motion.div
@@ -169,8 +169,8 @@ export default function CertificationPage() {
             </div>
             <div>
               <div className="flex justify-between items-center mb-2">
-                <span className="text-gray-700">Spring Boot Advanced Concepts</span>
-                <span className="text-sm text-gray-500">Active Learning</span>
+                <span className="text-gray-700 dark:text-gray-300">Spring Boot Advanced Concepts</span>
+                <span className="text-sm text-gray-500 dark:text-gray-400">Active Learning</span>
               </div>
               <div className="w-full bg-gray-200 rounded-full h-2">
                 <motion.div
@@ -184,8 +184,8 @@ export default function CertificationPage() {
             </div>
             <div>
               <div className="flex justify-between items-center mb-2">
-                <span className="text-gray-700">Node.js & Express.js Development</span>
-                <span className="text-sm text-gray-500">Active Learning</span>
+                <span className="text-gray-700 dark:text-gray-300">Node.js & Express.js Development</span>
+                <span className="text-sm text-gray-500 dark:text-gray-400">Active Learning</span>
               </div>
               <div className="w-full bg-gray-200 rounded-full h-2">
                 <motion.div
@@ -199,8 +199,8 @@ export default function CertificationPage() {
             </div>
             <div>
               <div className="flex justify-between items-center mb-2">
-                <span className="text-gray-700">Docker & Containerization</span>
-                <span className="text-sm text-gray-500">Planning</span>
+                <span className="text-gray-700 dark:text-gray-300">Docker & Containerization</span>
+                <span className="text-sm text-gray-500 dark:text-gray-400">Planning</span>
               </div>
               <div className="w-full bg-gray-200 rounded-full h-2">
                 <motion.div

@@ -5,10 +5,24 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* color-scheme: light dark; */
   }
   
   body {
-    @apply bg-white dark:bg-dark-900 text-dark-900 dark:text-white;
+    @apply bg-white dark:bg-dark-900 text-dark-900 dark:text-gray-100 transition-colors duration-300;
+  }
+
+  /* Light mode text colors */
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-dark-900 dark:text-white;
+  }
+
+  p {
+    @apply text-gray-700 dark:text-gray-300;
+  }
+
+  a {
+    @apply text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300;
   }
 }
 
@@ -18,20 +32,52 @@
   }
   
   .card {
-    @apply bg-white dark:bg-dark-800 rounded-lg shadow-lg p-6 border border-gray-200 dark:border-dark-700;
+    @apply bg-white dark:bg-dark-800 rounded-lg shadow-md dark:shadow-lg p-6 border border-gray-200 dark:border-dark-700 transition-colors duration-300;
+  }
+
+  .card:hover {
+    @apply shadow-lg dark:shadow-xl border-gray-300 dark:border-dark-600;
   }
   
   .btn-primary {
-    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+    @apply bg-primary-600 hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
   }
   
   .btn-secondary {
     @apply bg-gray-200 dark:bg-dark-700 hover:bg-gray-300 dark:hover:bg-dark-600 text-dark-900 dark:text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
   }
+
+  .nav-link {
+    @apply text-gray-700 dark:text-gray-300 hover:text-dark-900 dark:hover:text-white transition-colors duration-200;
+  }
+
+  .nav-link.active {
+    @apply text-primary-600 dark:text-primary-400 font-semibold;
+  }
+
+  .input-field {
+    @apply bg-white dark:bg-dark-800 border border-gray-300 dark:border-dark-600 text-dark-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 rounded-lg px-4 py-2 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500;
+  }
+
+  .divider {
+    @apply border-gray-300 dark:border-dark-700;
+  }
 }
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-primary-600 to-blue-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary-600 to-blue-600 dark:from-primary-400 dark:to-blue-400 bg-clip-text text-transparent;
+  }
+
+  .shadow-glow {
+    @apply shadow-lg dark:shadow-primary-500/20;
+  }
+
+  .bg-glass {
+    @apply backdrop-blur-md bg-white/80 dark:bg-dark-800/80;
+  }
+
+  .ring-focus {
+    @apply focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-dark-900;
   }
 }

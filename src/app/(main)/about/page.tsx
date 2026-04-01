@@ -44,7 +44,7 @@ export default function AboutPage() {
   ]
 
   return (
-    <div className="min-h-screen flex items-center section-padding">
+    <div className="min-h-screen flex items-center section-padding bg-gray-50 dark:bg-dark-900">
       <div className="max-w-6xl mx-auto w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -54,7 +54,7 @@ export default function AboutPage() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold mb-4">About Me</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Passionate backend developer with a love for clean code, scalable architecture, and solving complex problems
           </p>
         </motion.div>
@@ -75,30 +75,30 @@ export default function AboutPage() {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <Icon icon="mdi:account" width={20} height={20} className="text-primary-600 rm-1" />
-                <span className="text-gray-600">Dhrumi Shah</span>
+                <span className="text-gray-600 dark:text-gray-300">Dhrumi Shah</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Icon icon="mdi:map-marker" width={20} height={20} className="text-primary-600 rm-1" />
-                <span className="text-gray-600">Pune, Maharashtra, India</span>
+                <span className="text-gray-600 dark:text-gray-300">Pune, Maharashtra, India</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Icon icon="mdi:calendar" width={20} height={20} className="text-primary-600 rm-1" />
-                <span className="text-gray-600">Available for opportunities</span>
+                <span className="text-gray-600 dark:text-gray-300">Available for opportunities</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Icon icon="mdi:email" width={20} height={20} className="text-primary-600 rm-1" />
-                <span className="text-gray-600">dhrumishah02@gmail.com</span>
+                <span className="text-gray-600 dark:text-gray-300">dhrumishah02@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <a
                   href="https://www.hackerrank.com/dhrumishah02"
                   target="_blank"
                   // rel="noopener noreferrer"
-                  className="flex items-center space-x-3 text-gray-600 hover:text-primary-600 transition-colors duration-200"
+                  className="flex items-center space-x-3 text-gray-600 dark:text-gray-300 hover:text-primary-600 transition-colors duration-200"
                   title="HackerRank"
                 >
                   <Icon icon="simple-icons:hackerrank" width={20} height={20} className="text-primary-600 rm-1" />
-                  <span className="text-gray-600">HackerRank</span>
+                  <span className="text-gray-600 dark:text-gray-300">HackerRank</span>
                 </a>
               </div>
               <div className="flex items-center space-x-3">
@@ -106,11 +106,11 @@ export default function AboutPage() {
                   href="https://leetcode.com/u/ds4004"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-3 text-gray-600 hover:text-primary-600 transition-colors duration-200"
+                  className="flex items-center space-x-3 text-gray-600 dark:text-gray-300 hover:text-primary-600 transition-colors duration-200"
                   title="LeetCode"
                 >
                   <Icon icon="simple-icons:leetcode" width={20} height={20} className="text-primary-600 rm-1" />
-                  <span className="text-gray-600">LeetCode</span>
+                  <span className="text-gray-600 dark:text-gray-300">LeetCode</span>
                 </a>
               </div>
               <div className="flex items-center space-x-3">
@@ -118,11 +118,11 @@ export default function AboutPage() {
                   href="https://www.codechef.com/users/ds4004"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-3 text-gray-600 hover:text-primary-600 transition-colors duration-200"
+                  className="flex items-center space-x-3 text-gray-600 dark:text-gray-300 hover:text-primary-600 transition-colors duration-200"
                   title="CodeChef"
                 >
                   <Icon icon="simple-icons:codechef" width={20} height={20} className="text-primary-600 rm-1" />
-                  <span className="text-gray-600">CodeChef</span>
+                  <span className="text-gray-600 dark:text-gray-300">CodeChef</span>
                 </a>
               </div>
               <div className="flex items-center space-x-3">
@@ -130,11 +130,11 @@ export default function AboutPage() {
                   href="https://codeforces.com/profile/ds4004"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-3 text-gray-600 hover:text-primary-600 transition-colors duration-200"
+                  className="flex items-center space-x-3 text-gray-600 dark:text-gray-300 hover:text-primary-600 transition-colors duration-200"
                   title="Codeforces"
                 >
                   <Icon icon="simple-icons:codeforces" width={20} height={20} className="text-primary-600 rm-1" />
-                  <span className="text-gray-600">Codeforces</span>
+                  <span className="text-gray-600 dark:text-gray-300">Codeforces</span>
                 </a>
               </div>
             </div>
@@ -150,7 +150,7 @@ export default function AboutPage() {
           >
             <div className="card">
               <h3 className="text-2xl font-bold mb-4 text-primary-600">Who I Am</h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                 I’m a Backend Software Engineer with 1.7+ years of experience building scalable, cloud-native systems. Currently working at John Deere, I specialize in designing reliable backend services using Java, Node.js, and AWS.
                 I enjoy solving real-world problems through clean architecture and efficient system design, and I’m constantly exploring better ways to build systems that scale.
               </p>
@@ -158,7 +158,7 @@ export default function AboutPage() {
 
             <div className="card">
               <h3 className="text-2xl font-bold mb-4 text-primary-600">What I Do</h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                 I design and build backend systems that power applications at scale. My work focuses on developing microservices, event-driven architectures, and serverless workflows using modern cloud technologies.
                 From building APIs to automating workflows and deploying applications on AWS, I aim to create systems that are reliable, maintainable, and production-ready.
               </p>
@@ -166,16 +166,16 @@ export default function AboutPage() {
 
             <div className="card">
               <h3 className="text-2xl font-bold mb-4 text-primary-600">My Approach</h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                 I believe in building systems with clarity and purpose. My approach combines strong fundamentals with practical engineering.
               </p>
-              <ul className="list-disc list-inside mt-4 space-y-2 text-gray-600">
+              <ul className="list-disc list-inside mt-4 space-y-2 text-gray-600 dark:text-gray-300">
                 <li>Write clean, modular, and testable code</li>
                 <li>Design systems with scalability and performance in mind</li>
                 <li>Prefer simple solutions before complex ones</li>
                 <li>Focus on reliability, observability, and real-world usability</li>
               </ul>
-              <p className="text-gray-600 leading-relaxed mt-4">
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
                 I value collaboration, continuous learning, and shipping impactful solutions.
               </p>
             </div>

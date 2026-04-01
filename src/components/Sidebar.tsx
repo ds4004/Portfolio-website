@@ -29,7 +29,7 @@ function SidebarAvatar() {
   }
 
   return (
-    <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-2 border-white shadow-lg">
+    <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-2 border-gray-300 dark:border-dark-700 shadow-lg dark:shadow-lg dark:shadow-black/30">
       <Image
         src="./profile.png"
         alt="Dhrumi Shah"
@@ -53,23 +53,23 @@ export default function Sidebar({ sections, activeSection }: SidebarProps) {
       {/* Mobile Menu Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="lg:hidden fixed top-4 left-4 z-50 p-2 bg-white rounded-lg shadow-lg border border-gray-200"
+        className="lg:hidden fixed top-4 left-4 z-50 p-2 bg-white dark:bg-dark-800 rounded-lg shadow-lg border border-gray-200 dark:border-dark-700 text-dark-900 dark:text-white transition-colors duration-200"
       >
   {isOpen ? <Icon icon="mdi:close" width={24} height={24} /> : <Icon icon="mdi:menu" width={24} height={24} />}
       </button>
 
       {/* Sidebar */}
       <aside className={`
-        fixed top-0 left-0 h-full w-64 bg-white border-r border-gray-200 
+        fixed top-0 left-0 h-full w-64 bg-white dark:bg-dark-800 border-r border-gray-200 dark:border-dark-700
         transform transition-transform duration-300 ease-in-out z-40 flex flex-col
         ${isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
       `}>
         {/* Profile Section */}
-        <div className="p-6 border-b border-gray-200 flex-shrink-0">
+        <div className="p-6 border-b border-gray-200 dark:border-dark-700 flex-shrink-0">
           <div className="text-center">
             <SidebarAvatar />
-            <h2 className="text-xl font-bold text-gray-900">Dhrumi Shah</h2>
-            <p className="text-sm text-gray-600">Backend Developer</p>
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white">Dhrumi Shah</h2>
+            <p className="text-sm text-gray-600 dark:text-gray-400">Backend Developer</p>
           </div>
         </div>
 
@@ -86,8 +86,8 @@ export default function Sidebar({ sections, activeSection }: SidebarProps) {
                   className={`
                      w-full flex items-center space-x-3 px-4 py-3 rounded-lg text-left transition-all duration-200
                      ${pathname === section.path
-                      ? 'bg-primary-100 text-primary-700 border-r-2 border-primary-500'
-                      : 'text-gray-700 hover:bg-gray-100'
+                      ? 'bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 border-r-2 border-primary-500'
+                      : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-dark-700'
                     }
                    `}
                 >
@@ -100,13 +100,13 @@ export default function Sidebar({ sections, activeSection }: SidebarProps) {
         </nav>
 
         {/* Social Links */}
-        <div className="p-4 border-t border-gray-200 flex-shrink-0">
+        <div className="p-4 border-t border-gray-200 dark:border-dark-700 flex-shrink-0">
           <div className="flex justify-center space-x-4">
             <a
               href="https://github.com/ds4004"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-primary-600 transition-colors duration-200"
+              className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
             >
               <Icon icon="mdi:github" width={24} height={24} />
             </a>
@@ -114,7 +114,7 @@ export default function Sidebar({ sections, activeSection }: SidebarProps) {
               href="https://www.linkedin.com/in/dhrumishah02/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-primary-600 transition-colors duration-200"
+              className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
             >
               <Icon icon="mdi:linkedin" width={24} height={24} />
             </a>

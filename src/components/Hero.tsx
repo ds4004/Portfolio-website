@@ -19,11 +19,11 @@ export default function Hero() {
             <span className="text-gradient">Dhrumi Shah</span>
           </h1>
           
-          <h2 className="text-2xl md:text-3xl text-gray-600 mb-8">
+          <h2 className="text-2xl md:text-3xl text-gray-700 dark:text-gray-300 mb-8">
             Backend Developer & API Specialist
           </h2>
           
-          <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed">
             Specialize in developing scalable backend systems, APIs, and distributed solutions using Node.js, Java Spring Boot, and cloud technologies like AWS. Experienced in optimizing performance, enhancing security, automating deployments, and ensuring high system reliability through CI/CD and end-to-end testing.
           </p>
           
@@ -50,7 +50,7 @@ export default function Hero() {
               href="https://github.com/ds4004"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-primary-600 transition-colors duration-200"
+              className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
             >
               <Icon icon="mdi:github" width={24} height={24} />
             </a>
@@ -58,7 +58,7 @@ export default function Hero() {
               href="https://www.linkedin.com/in/dhrumishah02/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-primary-600 transition-colors duration-200"
+              className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
             >
               <Icon icon="mdi:linkedin" width={24} height={24} />
             </a>

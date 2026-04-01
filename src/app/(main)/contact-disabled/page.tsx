@@ -15,7 +15,7 @@ export default function ContactPage() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold mb-4">Get In Touch</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             I'm always interested in new opportunities and collaborations.
             Feel free to reach out if you'd like to work together or just say hello!
           </p>
@@ -37,7 +37,7 @@ export default function ContactPage() {
                 <Icon icon="mdi:email" className="text-primary-600" width={20} height={20} />
                 <div>
                   <p className="font-medium text-dark-900">Email</p>
-                  <p className="text-gray-600">john@developer.com</p>
+                  <p className="text-gray-600 dark:text-gray-300">john@developer.com</p>
                 </div>
               </div>
 
@@ -45,7 +45,7 @@ export default function ContactPage() {
                 <Icon icon="mdi:phone" className="text-primary-600" width={20} height={20} />
                 <div>
                   <p className="font-medium text-dark-900">Phone</p>
-                  <p className="text-gray-600">+1 (555) 123-4567</p>
+                  <p className="text-gray-600 dark:text-gray-300">+1 (555) 123-4567</p>
                 </div>
               </div>
 
@@ -53,7 +53,7 @@ export default function ContactPage() {
                 <Icon icon="mdi:map-marker" className="text-primary-600" width={20} height={20} />
                 <div>
                   <p className="font-medium text-dark-900">Location</p>
-                  <p className="text-gray-600">San Francisco, CA</p>
+                  <p className="text-gray-600 dark:text-gray-300">San Francisco, CA</p>
                 </div>
               </div>
             </div>
